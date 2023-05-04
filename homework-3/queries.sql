@@ -7,7 +7,7 @@ JOIN customers USING(customer_id)
 JOIN employees USING(employee_id)
 JOIN shippers ON orders.ship_via=shippers.shipper_id
 WHERE customers.city IN ('London') AND employees.city IN ('London')
-AND shippers.company_name in ('United Package'
+AND shippers.company_name in ('United Package')
 
 -- 2. Наименование продукта, количество товара (product_name и units_in_stock в табл products),
 -- имя поставщика и его телефон (contact_name и phone в табл suppliers) для таких продуктов,
